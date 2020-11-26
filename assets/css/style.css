@@ -1,0 +1,137 @@
+/* NAVBAR */
+#navbar{
+    background-color: rgb(58, 58, 58);
+}
+/* CAROUSEL */
+#bordure{
+    margin: 0%;
+    padding: 0%;
+}
+.carousel-item img {
+    
+    height:525px;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    filter: blur(10px);
+}
+.carousel-caption  {
+    bottom: 11.5rem;
+    
+}
+/* BANDEAU PROJECT */
+#project{
+    padding-top: 0.3rem;
+    padding-bottom: 0.2rem;
+    background: rgb(90, 141, 217);
+}
+.looking{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.search{
+    border: solid 2px white;
+    border-radius: 20px;
+    color: rgb(49, 110, 201);
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+    padding-right: 14.35px;
+    padding-left: 14.35px;
+}
+.evaluate{
+    border: solid 2px white;
+    border-radius: 20px;
+    color: rgb(49, 110, 201);
+    font-size: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+#evaluate:hover{
+    border: solid 2px #aaaaaa;
+    border-radius: 20px;
+    color: rgb(90, 141, 217);
+    margin: auto;
+    font-size: 20px;
+    background-color: white;
+}
+/*CORP*/
+#cadre{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+/*FOOTER*/
+footer{
+    padding: 1%;
+    background-color: rgb(58, 58, 58);
+}
+#rowFooter{
+    text-align: center;
+    color: white;
+}
+#logoFooter{
+    width: 30%;
+}
+/*SUBSCRIBE*/
+#formSubscribe {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#btnSubscribe {
+    background-color: rgb(90, 141, 217);
+    border: gray solid 0px;
+    color: white;
+}
+/*PARAGRAPH 1/Contact*/
+.pContact{
+    font-size: 0.75rem;
+}
+/*PARAGRAPH 2/Central*/
+.pCentral{
+    font-size: 0.75rem;
+}
+/*HORIZONTAL LINE*/
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgb(122, 122, 122);
+}
+
+/*SOCIAL NETWORKS*/
+.socialNetworks{
+    
+    margin: auto;
+
+}
+#twitter{
+    color: gray;
+}
+#twitter:hover{
+    color: rgb(185, 185, 185);
+}
+#facebook{
+    color: gray;
+}
+#facebook:hover{
+    color: rgb(185, 185, 185);
+}
+#instagram{
+    color: gray;
+}
+#instagram:hover{
+    color: rgb(185, 185, 185);
+}
+#linkedin{
+    color: gray;
+}
+#linkedin:hover{
+    color: rgb(185, 185, 185);
+}
