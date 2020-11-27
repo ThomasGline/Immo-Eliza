@@ -1,5 +1,74 @@
-<?php
-$result_decode;
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ImmoEliza</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-light" id="navbar">
+        <a class="navbar-brand" href="#">
+            <img src="assets/images/logo2.png" width="30%" class="d-inline-block align-top" alt="">
+        </a>
+    </nav>
+    <!-- CAROUSEL -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/architecture-1867187_1920.jpg" id="bordure">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/farm-1649146_1920.jpg" id="bordure">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/hampstead-4910147_1920.jpg" id="bordure">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="assets/images/house-4498947_1920.jpg" id="bordure">
+            </div>
+            <div class="carousel-caption">
+                <img src="assets/images/logo2.png">
+                <h2>Evaluate <span style="color: rgb(90, 141, 217);">your project</span></h2>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- PROJECT -->
+    </div>
+    <div class="col-12 col-sm-12 col-lg-12 mb-12" id="project">
+        <p class="looking">Looking for a project?</p>
+        <p class="button">
+            <!--<button class="search" data-toggle="modal" data-target="#step1">Search</button>-->
+            <button class="evaluate" data-toggle="modal" data-target="#step2">Evaluate</button>
+        </p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- LOCATION INFOS -->
+            <div class="col-12 col-sm-12 col-lg-12 mb-12" style="padding-bottom:50px; padding-top:50px; text-align: center;">
+            Price estimate :  <?php
+
 if ((!isset($_POST['building'])) || (!isset($_POST['house_area']))) {
     //echo "Le formulaire n'a pas encore été exécuté";
 } else {
@@ -87,85 +156,11 @@ $result_decode = json_decode($result_JSON, true);
 //echo $result_decode['estimated_price'];
 
 curl_close($ch);
-};?>
-
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>ImmoEliza</title>
-</head>
-
-<body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-light" id="navbar">
-        <a class="navbar-brand" href="#">
-            <img src="assets/images/logo2.png" width="30%" class="d-inline-block align-top" alt="">
-        </a>
-    </nav>
-    <!-- CAROUSEL -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="assets/images/architecture-1867187_1920.jpg" id="bordure">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/farm-1649146_1920.jpg" id="bordure">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/hampstead-4910147_1920.jpg" id="bordure">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="assets/images/house-4498947_1920.jpg" id="bordure">
-            </div>
-            <div class="carousel-caption">
-                <img src="assets/images/logo2.png">
-                <h2>Evaluate <span style="color: rgb(90, 141, 217);">your project</span></h2>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- PROJECT -->
-    </div>
-    <div class="col-12 col-sm-12 col-lg-12 mb-12" id="project">
-        <p class="looking">Looking for a project?</p>
-        <p class="button">
-            <!--<button class="search" data-toggle="modal" data-target="#step1">Search</button>-->
-            <button class="evaluate" data-toggle="modal" data-target="#step2">Evaluate</button>
-        </p>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- LOCATION INFOS -->
-            <div class="col-12 col-sm-12 col-lg-6 mb-6" style="padding-bottom:50px; padding-top:50px; text-align: center;">
-                Price estimate :  <?php 
                 $fmt = new NumberFormatter( 'de_DE', NumberFormatter::CURRENCY );
                 echo $fmt->formatCurrency($result_decode['estimated_price'], "EUR");
                 //echo $fmt-> $result_decode['estimated_price'];
+};
                 ?>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 mb-6" style="padding-bottom:50px; padding-top:50px; text-align: center;">
-                <p>Postalcode : <?php echo($_POST["postalcode"]) ?></p>
             </div>
         </div>
     </div>
@@ -253,7 +248,7 @@ curl_close($ch);
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Step 2</h4>
+                    <h4 class="modal-title">Fill in the form</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
@@ -336,7 +331,7 @@ curl_close($ch);
                             </div>
                             <!-- sas new -->
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Sas new : </label>
+                                <label for="exampleFormControlInput1">As new : </label>
                                 <input type="radio" name="Sas_new" value="1" required>
                                 <label for="pool1"> oui</label>
                                 <input type="radio" name="Sas_new" value="0" checked="checked">
@@ -344,7 +339,7 @@ curl_close($ch);
                             </div>
                             <!-- Sjust renov -->
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Sjust renov : </label>
+                                <label for="exampleFormControlInput1">Recently renovated : </label>
                                 <input type="radio" name="Sjust_renov" value="1" required>
                                 <label for="pool1"> oui</label>
                                 <input type="radio" name="Sjust_renov" value="0" checked="checked">
@@ -352,7 +347,7 @@ curl_close($ch);
                             </div>
                             <!-- Sgood -->
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Sgood : </label>
+                                <label for="exampleFormControlInput1">In good condition : </label>
                                 <input type="radio" name="Sgood" value="1" required>
                                 <label for="pool1"> oui</label>
                                 <input type="radio" name="Sgood" value="0" checked="checked">
@@ -360,7 +355,7 @@ curl_close($ch);
                             </div>
                             <!-- Sto_refresh -->
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Sto_refresh : </label>
+                                <label for="exampleFormControlInput1">requires refreshes : </label>
                                 <input type="radio" name="Sto_refresh" value="1" required>
                                 <label for="pool1"> oui</label>
                                 <input type="radio" name="Sto_refresh" value="0" checked="checked">
@@ -368,7 +363,7 @@ curl_close($ch);
                             </div>
                             <!-- Sto_renov -->
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Sto_renov : </label>
+                                <label for="exampleFormControlInput1">requires renovation : </label>
                                 <input type="radio" name="Sto_renov" value="1" checked="checked" required>
                                 <label for="pool1"> oui</label>
                                 <input type="radio" name="Sto_renov" value="0">
@@ -376,7 +371,7 @@ curl_close($ch);
                             </div>
                             <!-- Sto_restor -->
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Sto_restor : </label>
+                                <label for="exampleFormControlInput1">requires restoration : </label>
                                 <input type="radio" name="Sto_restor" value="1" required>
                                 <label for="pool1"> oui</label>
                                 <input type="radio" name="Sto_restor" value="0" checked="checked">
